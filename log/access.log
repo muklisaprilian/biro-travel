@@ -1,0 +1,8 @@
+[2025-04-12 10:46:08] [ACCESS] Akses api dari IP [::1] POST /login
+[2025-04-12 10:47:14] [ACCESS] Akses api dari IP [::1] POST /login
+[2025-04-12 10:53:18] [ACCESS] Akses api dari IP [::1] GET /staff
+[2025-04-12 10:54:10] [ACCESS] Akses api dari IP [::1] GET /staff
+[2025-04-12 10:56:15] [ACCESS] Akses api dari IP [::1] GET /staff
+[2025-04-12 10:59:27] [ACCESS] Akses api dari IP [::1] POST /staff/create
+[2025-04-12 11:03:12] [ACCESS] Akses api dari IP [::1] POST /staff/create
+[2025-04-12 11:06:01] [ACCESS] Akses api dari IP [::1] GET /verification/email?email=apriliangraphics@gmail.com

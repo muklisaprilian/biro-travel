@@ -98,7 +98,7 @@ const createTableDestinations = async () => {
   return await executeQuery(query);
 }
 const createTableOrder = async () => {
-  const query = `CREATE TABLE IF NOT EXISTS order (
+  const query = `CREATE TABLE IF NOT EXISTS orders (
   id int(11) NOT NULL auto_increment,
   packages_id int(11) DEFAULT NULL,
   user_id int(11) DEFAULT NULL,
@@ -144,12 +144,12 @@ const createTablePackagesdetail = async () => {
 
 //
 const getOrderById = async (id) => {
-  const query = `SELECT * FROM order WHERE user_id='${id}'`;
+  const query = `SELECT * FROM orders WHERE user_id='${id}'`;
   return await executeQuery(query);
 };
 //
 const getOrder = async () => {
-  const query = `SELECT * FROM order`;
+  const query = `SELECT * FROM orders`;
   return await executeQuery(query);
 };
 //
@@ -276,8 +276,8 @@ const insertPackagesdetail = async (packages_id, destination_id, fasilitas, stat
 };
 //
 const insertOrder = async (packages_id, user_id, telp, status) => {
-  const query = `INSERT INTO order (packages_id, user_id, telp, status) VALUES ('${packages_id}', '${user_id}', '${telp}', '${status}');`;
-  KeiLog("INFO" , "Insert kedalam tb order");
+  const query = `INSERT INTO orders (packages_id, user_id, telp, status) VALUES ('${packages_id}', '${user_id}', '${telp}', '${status}');`;
+  KeiLog("INFO" , "Insert kedalam tb orders");
   return await executeQuery(query);
 };
 //
@@ -330,8 +330,8 @@ const updatePackagesdetail = async (id, packages_id, destination_id, fasilitas, 
 }
 //
 const updateOrder = async (id, packages_id, user_id, telp, status) => {
-  const query = `UPDATE order SET packages_id=${packages_id}, user_id=${user_id}, telp='${telp}', status='${status}' WHERE id=${id}`;
-  KeiLog("INFO" , "Update kedalam tb order");
+  const query = `UPDATE orders SET packages_id=${packages_id}, user_id=${user_id}, telp='${telp}', status='${status}' WHERE id=${id}`;
+  KeiLog("INFO" , "Update kedalam tb orders");
   return await executeQuery(query);
 }
 //
@@ -378,8 +378,8 @@ const deletePackagesdetail = async (id) => {
 }
 //
 const deleteOrder = async (id) => {
-  const query = `DELETE FROM order WHERE id=${id}`;
-  KeiLog("INFO" , "Delete kedalam tb order");
+  const query = `DELETE FROM orders WHERE id=${id}`;
+  KeiLog("INFO" , "Delete kedalam tb orders");
   return await executeQuery(query);
 }
 

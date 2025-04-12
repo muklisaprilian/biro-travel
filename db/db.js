@@ -143,8 +143,13 @@ const createTablePackagesdetail = async () => {
 }
 
 //
-const getOrderById = async (id) => {
+const getOrderByIds = async (id) => {
   const query = `SELECT * FROM orders WHERE user_id='${id}'`;
+  return await executeQuery(query);
+};
+//
+const getOrderById = async (id) => {
+  const query = `SELECT * FROM orders WHERE id='${id}'`;
   return await executeQuery(query);
 };
 //
@@ -397,6 +402,7 @@ module.exports = {
   getPackagesById,
   getOrder,
   getOrderById,
+  getOrderByIds,
   getDestinations,
   getDestinationsById,
   getCities,

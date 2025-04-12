@@ -2,3 +2,26 @@
 [2025-04-12 10:59:27] [INFO] Email (muklisapriliansyah@gmail.com) sudah terdaftar
 [2025-04-12 11:03:12] [INFO] Insert kedalam tb users
 [2025-04-12 11:06:01] [INFO] Update kedalam tb users
+[2025-04-12 11:19:49] [INFO] Update kedalam tb users
+[2025-04-12 11:34:59] [INFO] Insert kedalam tb categories
+[2025-04-12 11:37:45] [INFO] Update kedalam tb categories
+[2025-04-12 11:38:08] [INFO] Update kedalam tb categories
+[2025-04-12 11:38:54] [INFO] Delete kedalam tb categories
+[2025-04-12 11:39:13] [INFO] Insert kedalam tb categories
+[2025-04-12 11:44:06] [INFO] Insert kedalam tb cities
+[2025-04-12 11:48:48] [INFO] Parameter email (user1@gmails.com) tidak sesuai format
+[2025-04-12 11:49:06] [INFO] Insert kedalam tb users
+[2025-04-12 11:54:21] [INFO] Insert kedalam tb destinations
+[2025-04-12 12:07:04] [INFO] Packages tidak boleh kosong
+[2025-04-12 12:08:21] [INFO] Insert kedalam tb packages
+[2025-04-12 12:11:29] [INFO] Update kedalam tb packages
+[2025-04-12 13:03:43] [INFO] Insert kedalam tb packages_detail
+[2025-04-12 13:04:21] [INFO] Update kedalam tb packages_detail
+[2025-04-12 13:15:39] [INFO] Insert kedalam tb orders
+[2025-04-12 13:19:52] [INFO] Update kedalam tb packages_detail
+[2025-04-12 13:21:46] [INFO] Insert kedalam tb orders
+[2025-04-12 13:22:13] [INFO] Insert kedalam tb orders
+[2025-04-12 13:29:17] [INFO] Update kedalam tb orders
+[2025-04-12 13:29:46] [INFO] Delete kedalam tb orders
+[2025-04-12 13:31:42] [INFO] Insert kedalam tb orders
+[2025-04-12 13:33:24] [INFO] Update kedalam tb orders

@@ -1218,7 +1218,7 @@ async function OrderById(req, res){
   const email = req.userEmail;
   const { user_id } = req.query;
   const [access] = await db.getUser(email);
-  const users = await db.getOrderById(user_id);
+  const users = await db.getOrderByIds(user_id);
   let results;
 
   const datas = await Promise.all(users.map(async (obj) => {

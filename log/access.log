@@ -66,3 +66,7 @@
 [2025-04-12 13:37:44] [ACCESS] Akses api dari IP [::1] GET /order/id?id=3
 [2025-04-12 13:38:21] [ACCESS] Akses api dari IP [::1] GET /order/id?user_id=3
 [2025-04-12 13:41:13] [ACCESS] Akses api dari IP [::1] GET /order/id?user_id=3
+[2025-04-13 17:18:29] [ACCESS] Akses api dari IP [::1] GET /order/id?user_id=3
+[2025-04-13 17:18:48] [ACCESS] Akses api dari IP [::1] POST /login
+[2025-04-13 17:19:16] [ACCESS] Akses api dari IP [::1] POST /login
+[2025-04-13 17:20:18] [ACCESS] Akses api dari IP [::1] GET /order/id?user_id=3

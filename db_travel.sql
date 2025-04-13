@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 12, 2025 at 08:43 AM
+-- Generation Time: Apr 13, 2025 at 12:07 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -179,7 +179,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `isActive`, `role`, `created_at`, `updated_at`) VALUES
-(1, 'User', 'Nutech', 'muklisapriliansyah@gmail.com', '$argon2id$v=19$m=4096,t=3,p=1$PLLTwK0cN47RINA4BeiKEQ$2wVw6iFwo16zIEtp6J8UGCG/bR1o9lRbB2qe+8CsyJo', 1, 'admin', '2025-03-22 18:23:28', '2025-03-23 02:32:35'),
+(1, 'User', 'Nutech', 'aprilians@gmail.com', '$argon2id$v=19$m=4096,t=3,p=1$PLLTwK0cN47RINA4BeiKEQ$2wVw6iFwo16zIEtp6J8UGCG/bR1o9lRbB2qe+8CsyJo', 1, 'admin', '2025-03-22 18:23:28', '2025-04-13 17:06:56'),
 (2, 'aprilian', 'Nutechs', 'apriliangraphics@gmail.com', '$argon2id$v=19$m=4096,t=3,p=1$cIrc/yPa2onhUL4xLpbpuA$BBZmS0iPH83PnRRebs4EiH4Mt1/vppI17gagWaoe878', 1, 'staff', '2025-04-12 04:03:12', '2025-04-12 11:19:49'),
 (3, 'User1', 'Nutech', 'user1@gmail.com', '$argon2id$v=19$m=4096,t=3,p=1$Gev69kMhvw/AHaKu8zeFPQ$pfiQ9BVriiKVGg2IpCvXFGvYzuJ91rq5VFyvZcGQzDc', 1, 'user', '2025-04-12 04:49:06', '2025-04-12 13:42:34');
 

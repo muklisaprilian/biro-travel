@@ -6,38 +6,35 @@ const { escape } = require("mysql2/promise");
 const { KeiLog } = require("../lib/Logger");
 
 const createConnection = async () => {
-  return await mysql.createConnection({
+  const pool = mysql.createPool({
     host: config.host,
     port: config.port,
     user: config.user,
     password: config.password,
-    database: config.database
+    database: config.database,
+   // waitForConnections: true,
+   // connectionLimit: 100, // Adjust this as per your system requirements
+   // queueLimit: 0
   });
 
-  // const client = new Client({
-  //   host: config.host,
-  //   port: config.port,
-  //   user: config.user,
-  //   password: config.password,
-  //   database: config.database
-  // });
-
-  // try {
-  //   await client.connect();
-  //   console.log('Connected to PostgreSQL');
-  //   return client;
-  // } catch (error) {
-  //   console.error('Connection to PostgreSQL failed:', error);
-  //   throw error;
-  // }
+  //return await pool.getConnection();
+  return pool;
 };
 
 const executeQuery = async (query) => {
   const conn = await createConnection();
-  const [rows] = await conn.query(query);
-  await conn.end();
-  return rows;
+
+  try {
+    const [rows] = await conn.query(query); // Execute the query
+    return rows;
+  } catch (error) {
+    console.error('Query execution failed:', error);
+    throw error;
+  } finally {
+    await conn.end(); // Close the connection after execution
+  }
 };
+
 
 const getFormattedDate = (date) => {
   return format("yyyy-MM-dd", date);
